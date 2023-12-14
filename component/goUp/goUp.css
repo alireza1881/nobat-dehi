@@ -1,0 +1,47 @@
+.go-up-float-icon{
+    background-color: var(--mainColor);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.circle{
+    background-color: white;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle .arrow{
+    width: 20%;
+    height: 20%;
+    border: solid 3px var(--mainColor);
+    transform: rotate(45deg);
+    border-width: 3px 0 0 3px;
+    top: 45%;
+    margin: auto;
+    position: absolute;
+}
+@media(max-width:768px){
+    .go-up-float-icon{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media(max-width:425px){
+    .go-up-float-icon{
+        width: 40px;
+        height: 40px;
+    }
+}
+@keyframes goToUp{
+    
+}

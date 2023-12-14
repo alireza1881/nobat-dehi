@@ -1,0 +1,43 @@
+.item{
+    max-width: 300px;
+    background-color: var(--mainColor);
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item img{
+    width: 100%;
+    height: 70%;
+    border-radius: 15px 15px 0 0;
+}
+.item .name{
+    font-size: 1.5rem;
+}
+.doctor-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25%;
+}
+.doctor-info div{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.btn{
+    all: unset;
+    background-color: var(--thirdColor);
+    border-radius: 8px;
+    padding: 5px;
+}
+@media(max-width:600px){
+    .item{
+        width:250px;
+        justify-self: center;
+    }
+    .name{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,62 @@
+.apoint{
+    background-color: var(--mainColor);
+    margin-bottom: 40px;
+    border-radius: 8px;
+    margin: 0;
+    padding: 10px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+.apoint label{
+    background-color: var(--thirdColor);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 0 10px;
+}
+/* @media(max-width:768px){
+    .content{
+        flex-direction: column;
+        width: 100%;
+    }
+    .content aside{
+        max-width: 100%;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+    .content section{
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+        padding: 20px;
+    }
+    aside .tab-list{
+        background-color: rgba(142, 216, 247, 0.5);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+        margin: 3px;
+        border-radius: 12px 12px 0 0;
+    }
+    aside .tab-list li{
+        background-color: unset;
+        margin: 2px;
+        width: 33%;
+        text-align: center;
+        border-radius: 0;
+    }
+    .center{
+        border: solid 1px var(--secondColor);
+        border-width: 0 2px;
+    }
+    .user-profile{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .user-profile label{
+        background-color: white;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        padding: 0 10px;
+    
+    }
+} */

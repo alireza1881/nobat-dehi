@@ -1,0 +1,45 @@
+.content{
+    height: 90vh;
+    top:50px;
+    padding: 0;
+}
+.chat-box{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    background: url(../images/scale_1200-34-3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: scroll;
+    height: 95%;
+}
+.chat-box::-webkit-scrollbar{
+    display: none;
+}
+.chat-box::-webkit-scrollbar-thumb{
+    display: none;
+}
+.chat-box::-webkit-scrollbar-track{
+    display: none;
+}
+.input-msg-box{
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 6%;
+    border-top: solid 1px gray;
+    padding: 0 30px;
+
+}
+.input-msg-box input{
+    all: unset;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+.user-msg, .subport-msg, .msg-box{
+    display: contents;
+}

@@ -1,0 +1,19 @@
+.pop-up-box{
+    background-color: rgba(209, 252, 255, 0.582);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+h1{
+    background-color: var(--secondColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
+}

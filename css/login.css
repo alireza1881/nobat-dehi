@@ -1,0 +1,45 @@
+.login-box{
+    background: radial-gradient(var(--userMsgColor), var(--mainColor));
+    box-shadow: 0 10px 20px gray;
+    width: 100%;
+    max-width: 400px;
+    height: 350px;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-box span{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+}
+.links{
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    padding: 0 20px;
+}
+a{
+    color: black;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+@media(max-width:768px){
+    .login-box{
+        width: 80%;
+        max-width: 300px;
+        height: 250px;
+        padding: 5px;
+    }
+    .login-box span{
+        margin: 10px 5px;
+    }
+    .links{
+        width: 60%;
+    }
+}

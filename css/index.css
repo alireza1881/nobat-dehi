@@ -1,0 +1,132 @@
+.content{
+    padding: 0 10px;
+    margin: auto;
+    max-width: 1400px;
+}
+.top-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.label{
+    font-size: 1.5rem;
+}
+.top-box a{
+    margin-left: 20px;
+    color: rgb(15, 125, 203);
+    cursor: pointer;
+}
+.box{
+    margin-bottom: 30px;
+}
+.field-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 350px;
+    grid-gap: 10px;
+    grid-template-areas: 
+        "field-1 field-1 field-3"    
+        "field-2 field-4 field-4"    
+        "field-5 field-5 field-5" 
+    ;
+}
+.field-items a{
+    width: inherit;
+}
+.field:hover, .articel:hover{
+    box-shadow: 0 10px 15px rgb(171, 171, 171);
+    transform: scale(1.01);
+}
+
+.field-1{
+    grid-area: field-1;
+    background: linear-gradient(to bottom, var(--itemGradient)), url(../images/cheshm-pezeshk.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.field-2{
+    grid-area: field-2;
+    background: linear-gradient(to bottom, var(--itemGradient)), url(../images/kudak.jpg);
+
+}
+.field-3{
+    grid-area: field-3;
+    background: linear-gradient(to bottom, var(--itemGradient)), url(../images/govaresh.jpg);
+
+}
+.field-4{
+    grid-area: field-4;
+    background: linear-gradient(to bottom, var(--itemGradient)), url(../images/ravan-pezeshk.jpg);
+
+}
+.field-5{
+    grid-area: field-5;
+    background: linear-gradient(to bottom, var(--itemGradient)), url(../images/ortoped.jpg);
+
+}
+.field, .articel{
+    background-color: linear-gradient(to bottom, var(--itemGradient));
+    /* background: url(../images/default.jpg); */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    font-weight: 700;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 1.3rem;
+}
+.articel-items{
+    display: flex;
+    justify-content: space-evenly;
+}
+.articel-items .articel-item{
+    margin: 10px;
+}
+.articel{
+    background: linear-gradient(to bottom ,var(--itemGradient)), url(../images/default.jpg);
+    width: 33%;
+    height: 250px;
+    margin: 10px;
+    padding-bottom: 10px;
+    border: solid 1px gray;
+}
+.articel-label{
+    font-size: 1.3rem;
+}
+@media(max-width:768px){
+    .field-items{
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 200px;
+        grid-template-areas: 
+        "field-1 field-1"
+        "field-3 field-2"
+        "field-4 field-2"
+        "field-5 field-5"
+        ;
+    }
+    .articel{
+        height: 150px;
+    }
+    .articel-label{
+        font-size: 1rem;
+    }
+}
+@media(max-width:425px){
+    .articel{
+        font-size: 0.8rem;
+        padding: 2px;
+        margin: 3px;
+        height: 100px;
+    }
+}
+@keyframes sliderOpen{
+    from{
+        right: -100%;
+    }
+    to{
+        right: 0;
+    }
+}

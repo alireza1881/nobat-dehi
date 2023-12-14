@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/doctors.css">
+    <title>doctors</title>
+</head>
+
+<body dir="rtl">
+    <div class="apointment">
+        <div class="apointment-box">
+            <div class="info-sec">
+                <label id="name">نام:<label></label></label>
+                <label id="field">تخصص:<label></label></label>    
+            </div>
+            <label class="addres">آدرس: <label></label></label>
+            <div class="date-sec">
+                <label>تاریخ: </label>
+                <input type="date">
+            </div>
+            <div class="submit-sec">
+                <button class="cancel">لغو</button>
+                <button class="submit">ثبت</button>
+            </div>
+            <h4></h4>
+        </div>
+    </div>
+    <div class="container">
+        <header-site></header-site>
+        <div class="content">
+            <div class="filter-box">
+                <div class="filter-items">
+                    <div class="right-sec filter-sec">
+                        <span>
+                            <label>نام</label></br>
+                            <input id="first-name" type="text" placeholder="نام دکتر را وارد کنید">
+                        </span>
+                        <span>
+                            <label>نام خانوادگی</label></br>
+                            <input id="last-name" -name type="text" placeholder="نام خانوادگی دکتر را وارد کنید">
+                        </span>
+                    </div>
+                    <div class="left-sec filter-sec">
+
+                        <span>
+                            <label>شهر</label></br>
+                            <select id="city-filter">
+                                <option value="انتخاب" selected>انتخاب</option>
+                                <option value="همدان">همدان</option>
+                                <option value="تهران">تهران</option>
+                                <option value="اصفهان">اصفهان</option>
+                                <option value="مشهد">مشهد</option>
+                            </select>
+                        </span>
+                        <span>
+                            <label>تخصص</label></br>
+                            <select id="field-filter">
+                                <option value="انتخاب" selected>انتخاب</option>
+                                <option value="چشم">چشم پزشک</option>
+                                <option value="گوارش">گوارش</option>
+                                <option value="روانپزشک">روانپزشک</option>
+                                <option value="کودک">کودک</option>
+                                <option value="ارتوپد">ارتوپد</option>
+                                <option value="داخلی">داخلی</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+                <button class="set-filter-btn">اعمال</button>
+            </div>
+            <div class="list-box">
+                <div class="items-box">
+                </div>
+                <div class="pagination">
+                </div>
+            </div>
+        </div>
+        <footer-site></footer-site>
+        <chat-icon></chat-icon>
+        <go-up></go-up>
+    </div>
+    <script src="./js/module.js" type="module"></script>
+    <script src="./js/doctorsList.js"></script>
+    <!-- <script src="./js/main.js"></script> -->
+</body>
+
+</html>
